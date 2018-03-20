@@ -1,3 +1,5 @@
+package assignment2018;
+
 // ===================== Initialises =====================
 
 // Constucts a new Board

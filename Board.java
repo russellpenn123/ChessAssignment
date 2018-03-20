@@ -1,3 +1,5 @@
+package assignment2018;
+
 public class Board{
 
   Piece[][] board;
@@ -31,6 +33,23 @@ public class Board{
     }
   }
 
+  private int letterToGrid(char input){
+    switch(input){
+      case 'A': return 0;
+      case 'B': return 1;
+      case 'C': return 2;
+      case 'D': return 3;
+      case 'E': return 4;
+      case 'F': return 5;
+      case 'G': return 6;
+      case 'H': return 7;
+
+      default:
+        System.out.println("Invalid entry to convert letter to co-ord");
+        return null;
+    }
+  }
+
   public void insertPiece(Piece inputPiece, int inX, int inY){
     if (!spaceOccupied(inX, inY) && withinBoard(inX, inY)){
       board[inX][inY] == inputPiece;
@@ -43,6 +62,10 @@ public class Board{
   public void deletePiece(int inX, int inY){
     if (withinBoard(inX, inY)){
       board[inX][inY] == null;
+  }
+
+  public Piece getPiece(int inX, int inY){
+    return board[inX][inY];
   }
 
   }

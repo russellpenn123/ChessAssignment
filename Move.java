@@ -1,3 +1,5 @@
+package assignment2018;
+
 public class Move{
 
   Piece piece;
@@ -30,5 +32,12 @@ public class Move{
 
   public int getToY(){
     return toY;
+  }
+
+  public boolean isEqual(Move inputMove){
+    if (inputMove.piece == this.piece && inputMove.toX == this.toX && inputMove.toY == this.toY){
+      return true;
+    }
+    return false;
   }
 }
