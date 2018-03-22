@@ -65,4 +65,13 @@ public HumanPlayer extends Player{
     writer.print("Y > ");
     input[1] = reader.readInt();
   }
+  
+  public boolean hasKing(){
+    for (Piece currentPiece : pieces){
+      if (currentPiece.pieceValue == 6){
+        return true;
+      }
+    }
+    return false;
+  }
 }

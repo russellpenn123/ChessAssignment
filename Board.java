@@ -13,7 +13,7 @@ public class Board{
   }
 
   public boolean withinBoard(int inX, int inY){
-    return ((inX <= 7 && inX >=0) && (inY <= 7 && inY >= 0));
+    return ((inX < PieceCode.XSIZE && inX >=0) && (inY < PieceCode.YSIZE && inY >= 0));
   }
 
   private char gridToLetter(int coord){
