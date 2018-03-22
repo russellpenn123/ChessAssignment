@@ -1,4 +1,4 @@
-package assignment2018.codeprovided;
+// package assignment2018;
 
 import java.util.*;
 import assignment2018.Board;
@@ -21,7 +21,7 @@ import assignment2018.Move;
  *         (s.c.maddock@sheffield.ac.uk)
  */
 
-public abstract class Piece {
+public abstract class Piece{
 
     // instance fields to store piece symbol, location, colour and board
     private char pieceCharacter;

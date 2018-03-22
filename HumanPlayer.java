@@ -1,4 +1,4 @@
-package assignment2018;
+// package assignment2018;
 import sheffield.*;
 
 public HumanPlayer extends Player{

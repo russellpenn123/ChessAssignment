@@ -1,4 +1,4 @@
-package assignment2018.codeprovided;
+// package assignment2018;
 
 /*
  * PieceCode.java  	2.1 26/02/2018

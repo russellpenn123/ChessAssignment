@@ -1,4 +1,4 @@
-package assignment2018;
+// package assignment2018;
 
 public class Board{
 
@@ -52,21 +52,22 @@ public class Board{
 
   public void insertPiece(Piece inputPiece, int inX, int inY){
     if (!spaceOccupied(inX, inY) && withinBoard(inX, inY)){
-      board[inX][inY] == inputPiece;
+      board[inX][inY] = inputPiece;
     }
-    else(
-    System.out.println("This spot is already taken or outside the board");
-    )
+    else{
+      System.out.println("This spot is already taken or outside the board");
+    }
   }
 
   public void deletePiece(int inX, int inY){
     if (withinBoard(inX, inY)){
-      board[inX][inY] == null;
+      board[inX][inY] = null;
+    }
   }
 
   public Piece getPiece(int inX, int inY){
     return board[inX][inY];
   }
 
-  }
 }
+

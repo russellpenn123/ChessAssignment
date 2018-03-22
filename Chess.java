@@ -1,5 +1,6 @@
-package assignment2018;
+// package assignment2018;
 
+// import assignment2018.*;
 // ===================== Initialises =====================
 
 // Constucts a new Board
@@ -23,7 +24,7 @@ public class Chess{
       
       // How do you create a player without having a player in the first place?
       HumanPlayer player1 = new Player("Russell", whitePieces, board, player2);
-      HumanPlayer player2 = new Player("Opponenet", blackPieces, board, player1);
+      HumanPlayer player2 = new Player("Opponent", blackPieces, board, player1);
       
       String winner;
       while (true){
@@ -32,6 +33,8 @@ public class Chess{
             winner = player1.getName();
             break;
         }
+        
+        // TextDisplay.displayBoard()
         
         player2.makeMove();
         if (!player1.hasKing()){
